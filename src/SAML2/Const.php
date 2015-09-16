@@ -51,6 +51,11 @@ class SAML2_Const
     * Holder-of-Key subject confirmation method.
     */
     const CM_HOK = 'urn:oasis:names:tc:SAML:2.0:cm:holder-of-key';
+    
+    /**
+     * Vouches subject confirmation method.
+     */
+    const CM_VOUCHES = 'urn:oasis:names:tc:SAML:2.0:cm:sender-vouches';
 
     /**
      * No claim as to principal consent is being made.
@@ -167,6 +172,12 @@ class SAML2_Const
     const NS_HOK = 'urn:oasis:names:tc:SAML:2.0:profiles:holder-of-key:SSO:browser';
 
     /**
+     * The status namespace
+     */
+    const STATUS_PREFIX = 'urn:oasis:names:tc:SAML:2.0:status:';
+
+    /**
+     * Top-level status code indicating successful processing of the request.
      * The request succeeded. Additional information MAY be returned in the <StatusMessage>
      * and/or <StatusDetail> elements.
      *
